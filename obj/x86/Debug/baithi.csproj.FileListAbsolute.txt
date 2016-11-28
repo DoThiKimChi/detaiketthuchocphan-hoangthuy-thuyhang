@@ -1,0 +1,8 @@
+C:\Users\PV Home\Documents\GitHub\sothu\baithi\baithi\obj\x86\Debug\baithi.Form1.resources
+C:\Users\PV Home\Documents\GitHub\sothu\baithi\baithi\obj\x86\Debug\baithi.Properties.Resources.resources
+C:\Users\PV Home\Documents\GitHub\sothu\baithi\baithi\obj\x86\Debug\baithi.csproj.GenerateResource.Cache
+C:\Users\PV Home\Documents\GitHub\sothu\baithi\baithi\bin\Debug\baithi.exe
+C:\Users\PV Home\Documents\GitHub\sothu\baithi\baithi\bin\Debug\baithi.pdb
+C:\Users\PV Home\Documents\GitHub\sothu\baithi\baithi\obj\x86\Debug\baithi.exe
+C:\Users\PV Home\Documents\GitHub\sothu\baithi\baithi\obj\x86\Debug\baithi.pdb
+C:\Users\PV Home\Documents\GitHub\sothu\baithi\baithi\obj\x86\Debug\baithi.csprojResolveAssemblyReference.cache
