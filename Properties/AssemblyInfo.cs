@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("baithi")]
+[assembly: AssemblyTitle("xếp số h--t")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("baithi")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyProduct("xếp số h--t")]
+[assembly: AssemblyCopyright("Copyright © Microsoft 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ed1cf9a6-a411-4bb3-9a0a-3493bbdbf91e")]
+[assembly: Guid("adea64d5-3437-4c81-8858-c1a87fb02e52")]
 
 // Version information for an assembly consists of the following four values:
 //

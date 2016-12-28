@@ -7,154 +7,270 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace baithi
+namespace xếp_số_h__t
 {
     public partial class Form1 : Form
     {
+        int num;
         public Form1()
         {
             InitializeComponent();
         }
-
-        private int x, y;
-        private int[] Arr = new int[9];
-        private int diem;
-        private int Time;
-        private int Level;
-        private bool TT_game = true;
-
-        private void initArr()
+        public void CheckButton(Button bttn1, Button bttn2)
         {
-            for (int i = 1; i < 10; i++)
+            if (bttn2.Text == "")
             {
-                Arr[i - 1] = i;
+                bttn2.Text = bttn1.Text;
+                bttn1.Text = "";
             }
         }
-        private void init()
-        {
-            x = 2;
-            y = 2;
-            diem = 0;
-            Time = 0;
-            Level = 1;
-            initArr();
 
-        }
-        private int get(int x, int y)
+        private void button1_Click(object sender, EventArgs e)
         {
-            return x + 3 * y;
+            CheckButton(button1, button2);
+            CheckButton(button1, button5);
+            CheckSolve();
         }
-        private void getanh(PictureBox pb, int a)
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            switch (a)
+            CheckButton(button2, button1);
+            CheckButton(button2, button6);
+            CheckButton(button2, button3);
+            CheckSolve();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CheckButton(button3, button2);
+            CheckButton(button3, button7);
+            CheckButton(button3, button4);
+            CheckSolve();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CheckButton(button4, button3);
+            CheckButton(button4, button8);
+            CheckSolve();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            CheckButton(button5, button1);
+            CheckButton(button5, button6);
+            CheckButton(button5, button9);
+            CheckSolve();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            CheckButton(button6, button2);
+            CheckButton(button6, button5);
+            CheckButton(button6, button10);
+            CheckButton(button6, button7);
+            CheckSolve();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            CheckButton(button7, button3);
+            CheckButton(button7, button6);
+            CheckButton(button7, button11);
+            CheckButton(button7, button8);
+            CheckSolve();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            CheckButton(button8, button4);
+            CheckButton(button8, button7);
+            CheckButton(button8, button12);
+            CheckSolve();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            CheckButton(button9, button5);
+            CheckButton(button9, button10);
+            CheckButton(button9, button13);
+            CheckSolve();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            CheckButton(button10, button9);
+            CheckButton(button10, button6);
+            CheckButton(button10, button11);
+            CheckButton(button10, button14);
+            CheckSolve();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            CheckButton(button11, button7);
+            CheckButton(button11, button10);
+            CheckButton(button11, button15);
+            CheckButton(button11, button12);
+            CheckSolve();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            CheckButton(button12, button8);
+            CheckButton(button12, button16);
+            CheckButton(button12, button11);
+            CheckSolve();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            CheckButton(button13, button9);
+            CheckButton(button13, button14);
+            CheckButton(button13, button17);
+            CheckSolve();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            CheckButton(button14, button10);
+            CheckButton(button14, button13);
+            CheckButton(button14, button15);
+            CheckButton(button14, button18);
+            CheckSolve();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            CheckButton(button15, button11);
+            CheckButton(button15, button14);
+            CheckButton(button15, button16);
+            CheckButton(button15, button19);
+            CheckSolve();
+        }
+        private void button16_Click_1(object sender, EventArgs e)
+        {
+            CheckButton(button16, button12);
+            CheckButton(button16, button15);
+            CheckButton(button16, button20);
+            CheckSolve();
+        }
+  
+         
+         private void button18_Click(object sender, EventArgs e)
+        {
+            CheckButton(button18, button14);
+            CheckButton(button18, button17);
+            CheckButton(button18, button19);
+            CheckSolve();
+        }
+        private void button19_Click(object sender, EventArgs e)
+        {
+            CheckButton(button19, button18);
+            CheckButton(button19, button15);
+            CheckButton(button19, button20);
+            CheckSolve();
+        }
+         private void button20_Click(object sender, EventArgs e)
+        {
+            CheckButton(button20, button16);
+            CheckButton(button20, button19);
+            CheckSolve();
+        }
+
+        public void CheckSolve()
+        {
+            num = num + 1;
+            label1.Text = num + "click";
+            if (button1.Text == "1" && button2.Text == "2" && button3.Text == "3" && button4.Text == "4" && button5.Text == "5" && button6.Text == "6" && button7.Text == "7" && button8.Text == "8" && button9.Text == "9" && button10.Text == "10" && button11.Text == "11" && button12.Text == "12" && button13.Text == "13" && button14.Text == "14" && button15.Text == "15" && button16.Text == "16" && button17.Text == "17" && button18.Text == "18" && button19.Text == "19" && button20.Text == "")
             {
-                case 1: pb.Image = baithi.Properties.Resources.DRMN_01; break;
-                case 2: pb.Image = baithi.Properties.Resources.DRMN_02; break;
-                case 3: pb.Image = baithi.Properties.Resources.DRMN_03; break;
-                case 4: pb.Image = baithi.Properties.Resources.DRMN_04; break;
-                case 5: pb.Image = baithi.Properties.Resources.DRMN_05; break;
-                case 6: pb.Image = baithi.Properties.Resources.DRMN_06; break;
-                case 7: pb.Image = baithi.Properties.Resources.DRMN_07; break;
-                case 8: pb.Image = baithi.Properties.Resources.DRMN_08; break;
-                case 9: pb.Image = null; pb.BackColor = Color.White; break;
+                MessageBox.Show("ban da bam no " + num + "click");
+                MessageBox.Show(" chúc mừng bạn đã thắng ");
             }
         }
-        private void showPb()
+        public void Shuffle()
         {
-            getanh(pb1, Arr[0]);
-            getanh(pb2, Arr[1]);
-            getanh(pb3, Arr[2]);
-            getanh(pb4, Arr[3]);
-            getanh(pb5, Arr[4]);
-            getanh(pb6, Arr[5]);
-            getanh(pb7, Arr[6]);
-            getanh(pb8, Arr[7]);
-            getanh(pb9, Arr[8]);
-        }
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-            init();
-            setmap();
-        }
-        private void intmap()
-        {
-            for (int i = 0; i < 200; i++) ;
-        }
-
-        private void go_left()
-        {
-            if (x > 0)
+            int i, j, Rn;
+            int[] a = new int[20];
+            Boolean flag = false;
+            i = 1;
+            do
             {
-                int temp = Arr[get(x, y)];
-                Arr[get(x, y)] = Arr[get(x - 1, y)];
-                Arr[get(x - 1, y)] = temp;
-                x--;
-                diem++;
-
-                showPb();
-            }
-        }
-        private void go_right()
-        {
-            if (x < 2)
-            {
-                int temp = Arr[get(x, y)];
-                Arr[get(x, y)] = Arr[get(x + 1, y)];
-                Arr[get(x + 1, y)] = temp;
-                x--;
-                diem++;
-
-                showPb();
-            }
-        }
-        private void go_top()
-        {
-            if (y > 0)
-            {
-                int temp = Arr[get(x, y)];
-                Arr[get(x, y)] = Arr[get(x, y - 1)];
-                Arr[get(x, y - 1)] = temp;
-                y--;
-                diem++;
-
-                showPb();
-            }
-        }
-        private void go_bottom()
-        {
-            if (y < 2)
-            {
-                int temp = Arr[get(x, y)];
-                Arr[get(x, y)] = Arr[get(x, y + 1)];
-                Arr[get(x, y + 1)] = temp;
-                y--;
-                diem++;
-
-                showPb();
-            }
-        }
-        private void setmap()
-        {
-            for (int i = 0; i < 200; i++)
-            {
-                Random rd = new Random();
-                int rdn = rd.Next(1, 5);
-
-                switch (rdn)
+            Random rnd = new Random();
+            Rn = Convert.ToInt32((rnd.Next(0, 19)) + 1);
+                for (j = 1;j<=i;j++)
                 {
-                    case 1: go_top(); break;
-                    case 2: go_right(); break;
-                    case 3: go_left(); break;
-                    case 4: go_bottom(); break;
+                if (a[j] == Rn)
+                {
+                flag = true;
+                    break;
                 }
+                }
+                if (flag == true)
+                {
+                    flag = false;
+                }
+                else {
+                    a[i] = Rn;
+                    i = i+1;
             }
-            int temp = Arr[get(x, y)];
-            Arr[get(x, y)] = Arr[8];
-            Arr[8] = temp;
-            x = 2;
-            y = 2;
-            showPb();
+
+        }
+        while (i <= 19);
+    
+            button1.Text = Convert.ToString(a[1]);
+            button2.Text = Convert.ToString(a[2]);
+            button3.Text = Convert.ToString(a[3]);
+            button4.Text = Convert.ToString(a[4]);
+            button5.Text = Convert.ToString(a[5]);
+            button6.Text = Convert.ToString(a[6]);
+            button7.Text = Convert.ToString(a[7]);
+            button8.Text = Convert.ToString(a[8]);
+            button9.Text = Convert.ToString(a[9]);
+            button10.Text = Convert.ToString(a[10]);
+            button11.Text = Convert.ToString(a[11]);
+            button12.Text = Convert.ToString(a[12]);
+            button13.Text = Convert.ToString(a[13]);
+            button14.Text = Convert.ToString(a[14]);
+            button15.Text = Convert.ToString(a[15]);
+            button16.Text = Convert.ToString(a[16]);
+            button17.Text = Convert.ToString(a[17]);
+            button18.Text = Convert.ToString(a[18]);
+            button19.Text = Convert.ToString(a[19]);
+            button20.Text = "";
+            num = 0;
+    }
+
+        private void newGameToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Shuffle();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+         private void Form1_Load(object sender, EventArgs e)
+        {
+            Shuffle();
+        }
+
+         private void button17_Click_1(object sender, EventArgs e)
+         {
+             
+            CheckButton(button17, button13);
+            CheckButton(button17, button18);
+            CheckSolve();
+        
+         }
+
+         private void bangXepHangToolStripMenuItem_Click(object sender, EventArgs e)
+         {
+             frmbangxephang bangxephang = new frmbangxephang();
+             bangxephang.ShowDialog();
+         }
+
         
         }
-    }
+    
 }

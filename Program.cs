@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace baithi
+namespace xếp_số_h__t
 {
     static class Program
     {

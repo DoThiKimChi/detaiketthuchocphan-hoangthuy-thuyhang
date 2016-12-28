@@ -1,0 +1,16 @@
+C:\Users\User-64\AppData\Local\Temporary Projects\xếp số h--t\bin\Debug\xếp số h--t.exe
+C:\Users\User-64\AppData\Local\Temporary Projects\xếp số h--t\bin\Debug\xếp số h--t.pdb
+C:\Users\User-64\AppData\Local\Temporary Projects\xếp số h--t\obj\x86\Debug\xếp_số_h__t.Form1.resources
+C:\Users\User-64\AppData\Local\Temporary Projects\xếp số h--t\obj\x86\Debug\xếp_số_h__t.Properties.Resources.resources
+C:\Users\User-64\AppData\Local\Temporary Projects\xếp số h--t\obj\x86\Debug\xếp số h--t.csproj.GenerateResource.Cache
+C:\Users\User-64\AppData\Local\Temporary Projects\xếp số h--t\obj\x86\Debug\xếp số h--t.exe
+C:\Users\User-64\AppData\Local\Temporary Projects\xếp số h--t\obj\x86\Debug\xếp số h--t.pdb
+C:\Users\User-64\documents\visual studio 2010\Projects\xếp số h--t\xếp số h--t\obj\x86\Debug\xếp số h--t.exe
+C:\Users\User-64\documents\visual studio 2010\Projects\xếp số h--t\xếp số h--t\obj\x86\Debug\xếp_số_h__t.Form1.resources
+C:\Users\User-64\documents\visual studio 2010\Projects\xếp số h--t\xếp số h--t\obj\x86\Debug\xếp_số_h__t.Properties.Resources.resources
+C:\Users\User-64\documents\visual studio 2010\Projects\xếp số h--t\xếp số h--t\obj\x86\Debug\xếp số h--t.csproj.GenerateResource.Cache
+C:\Users\User-64\Documents\Visual Studio 2010\Projects\xếp số h--t\xếp số h--t\bin\Debug\xếp số h--t.exe
+C:\Users\User-64\Documents\Visual Studio 2010\Projects\xếp số h--t\xếp số h--t\bin\Debug\xếp số h--t.pdb
+C:\Users\User-64\Documents\Visual Studio 2010\Projects\xếp số h--t\xếp số h--t\obj\x86\Debug\xếp số h--t.pdb
+C:\Users\User-64\documents\visual studio 2010\Projects\xếp số h--t\xếp số h--t\obj\x86\Debug\xếp số h--t.csprojResolveAssemblyReference.cache
+C:\Users\User-64\Documents\Visual Studio 2010\Projects\xếp số h--t\xếp số h--t\obj\x86\Debug\xếp_số_h__t.frmbangxephang.resources
